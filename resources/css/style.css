@@ -1,18 +1,47 @@
 
-header {
+/*-------------*/
+* {
+  font-size: 22px;
+  font-family: helvetica, sans-serif;
+  text-align: center;
 
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+/*-------------*/
+
+header {
+  height: 69px;
+  width: 100%;
+  display: flex;
+
+  border-bottom: 1px solid seashell;
+
+  justify-content: space-between;
+  z-index: 10;
+
+    border: 1px solid red;
 }
 header .title {
+  height: 50px;
 
+  padding-left: 10px;
+
+    border: 1px solid red;
 }
 header .nav {
+  text-decoration: underline;
 
+    border: 1px solid red;
 }
 
 /*************/
 /* Main Body */
 body {
 
+
+    border: 1px solid red;
 }
 
 /*  */
@@ -26,7 +55,7 @@ body {
 
 }
 .mission .title {
-
+  text-transform: capitalize;
 }
 .mission .title h2 {
 
@@ -58,7 +87,7 @@ body {
 
 }
 .selection .teas h4 {
-
+  text-transform: capitalize;
 }
 
 .selection .teas .berry {
