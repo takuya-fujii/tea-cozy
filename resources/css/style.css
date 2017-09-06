@@ -1,3 +1,10 @@
+/*
+TO-DOs
+header: space between each nav span
+
+
+
+*/
 
 /*-------------*/
 * {
@@ -19,29 +26,42 @@ header {
   border-bottom: 1px solid seashell;
 
   justify-content: space-between;
+  align-items: center;
+  position: fixed;
   z-index: 10;
+}
+header .logo {
+  height: 50px;
+  width: auto;
 
+  padding: 0px 10px;
     border: 1px solid red;
 }
-header .title {
+/*header img {
   height: 50px;
-
+  width: auto;
   padding-left: 10px;
 
     border: 1px solid red;
-}
+}*/
 header .nav {
+  display: flex;
+
   text-decoration: underline;
 
+  justify-content: space-around;
     border: 1px solid red;
 }
 
 /*************/
 /* Main Body */
-body {
+main {
+  display: flex;
+  /*flex-direction: column;*/
+  position: relative;
+  margin-top: 69px;
 
-
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 /*  */
