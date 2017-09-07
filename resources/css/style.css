@@ -2,13 +2,15 @@
 TO-DOs
 header: space between each nav span
 
+main-body:
+margin/padding for tea-selection boxes
 
 
 */
 
 /*-------------*/
-* {
-  font-size: 22px;
+html {
+  /*font-size: 22px;*/
   font-family: helvetica, sans-serif;
   text-align: center;
 
@@ -17,11 +19,16 @@ header: space between each nav span
   opacity: 0.9;
 }
 /*-------------*/
+body {
+  margin-top: 0px;
+}
+
 
 header {
   height: 69px;
   width: 100%;
   display: flex;
+  background-color: black;
 
   border-bottom: 1px solid seashell;
 
@@ -35,7 +42,7 @@ header .logo {
   width: auto;
 
   padding: 0px 10px;
-    border: 1px solid red;
+  /*  border: 1px solid red;*/
 }
 /*header img {
   height: 50px;
@@ -57,25 +64,45 @@ header .nav {
 /* Main Body */
 main {
   display: flex;
-  /*flex-direction: column;*/
-  position: relative;
-  margin-top: 69px;
+  flex-wrap: wrap;
+  width: 100%;
 
-    border: 2px solid red;
+  justify-content: center;
+  padding-top: 69px;
+
+    /*border: 2px solid red;*/
 }
+main .content {
+  flex-direction: row;
+}
+
 
 /*  */
 .content {
+  display: flex;
+  flex-wrap: wrap;
 
+  justify-content: center;
+  align-content: center;
+
+    /*border: 2px solid red;*/
 }
 
 /***********************/
 /* Content 1: mission */
 .mission {
-
+  display: flex;
+  height: 700px;
+  width: 1200px;
+  align-items: center;
+  background-image: url("../images/img-mission-background.jpg");
 }
 .mission .title {
+  width: 100%;
+
   text-transform: capitalize;
+
+  background-color: black;
 }
 .mission .title h2 {
 
@@ -88,7 +115,12 @@ main {
 /************************/
 /* Content 2: selection */
 .selection {
+  display: flex;
+  /*height: auto;*/
+  width: 1000px;
 
+  justify-content: center;
+  align-content: center;
 }
 .selection .title {
 
@@ -101,10 +133,18 @@ main {
 }
 
 .selection .teas {
+  display: flex;
+  flex-wrap: wrap;
 
+  justify-content: center;
+
+    /*border: 2px solid blue;*/
 }
 .selection .teas img {
+  height: 200px;
+  width: 300px;
 
+  margin-bottom: 10px;
 }
 .selection .teas h4 {
   text-transform: capitalize;
@@ -128,13 +168,35 @@ main {
 /***********************/
 /* Content 3: location */
 .location {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  height: 500px;
+  width: 1200px;
 
+  background-image: url("../images/img-locations-background.jpg");
 }
 .location .title {
+  width: 100%;
+  text-align: center;
 
+    /*border: 1px dotted orange;*/
 }
 .location .place {
+  display: flex;
+  flex-wrap: wrap;
 
+    /*border: 3px double red;*/
+}
+.location .place .box {
+  height: 300px;
+  width: 300px;
+
+  margin: 15px 20px;
+
+  background-color: black;
+  opacity: 1;
+
+  /*  border: 2px solid red;*/
 }
 
 
@@ -152,14 +214,12 @@ footer .title  h2{
 }
 
 footer .contact {
-
+  height: 200px;
 }
 footer .contact h5 {
 
 }
 footer .copyright {
-
-}
-footer .copyright h5 {
-
+  text-align: left;
+  padding-left: 20px;
 }
